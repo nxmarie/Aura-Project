@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgrad"
+    tools:context="com.example.auraia.Intros.homeActivity">
+
+    <Button
+        android:id="@+id/noiseScreenBtn"
+        android:layout_width="207dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="204dp"
+        android:background="@drawable/roundbtn"
+        android:text="@string/noiseBtnTxt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="19sp"
+        android:typeface="sans"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleAura" />
+
+    <Button
+        android:id="@+id/helpScreenBtn"
+        android:layout_width="207dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundbtn"
+        android:text="@string/helpBtnTxt"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        android:textSize="19sp"
+        android:typeface="sans"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsBtn"
+        app:layout_constraintVertical_bias="0.304" />
+
+    <Button
+        android:id="@+id/settingsBtn"
+        android:layout_width="207dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/roundbtn"
+        android:text="@string/settingsBtnTxt"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        android:textSize="19sp"
+        android:typeface="sans"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statsBtn" />
+
+    <Button
+        android:id="@+id/journalBtn"
+        android:layout_width="207dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/roundbtn"
+        android:includeFontPadding="true"
+        android:text="@string/journalBtnTxt"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textIsSelectable="false"
+        android:textSize="19sp"
+        android:typeface="sans"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noiseScreenBtn" />
+
+    <Button
+        android:id="@+id/statsBtn"
+        android:layout_width="207dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundbtn"
+        android:text="@string/statBtnTxt"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        android:typeface="sans"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/journalBtn" />
+
+    <TextView
+        android:id="@+id/titleAura"
+        android:layout_width="348dp"
+        android:layout_height="83dp"
+        android:background="#00FFFFFF"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="#4A9BFF"
+        android:textSize="60sp"
+        android:typeface="normal"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+
+    <Switch
+        android:id="@+id/dimmerShortcut"
+        android:layout_width="57dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <ImageView
+        android:id="@+id/auraLogo"
+        android:layout_width="343dp"
+        android:layout_height="240dp"
+        android:src="@drawable/picture1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195" />
+</androidx.constraintlayout.widget.ConstraintLayout>

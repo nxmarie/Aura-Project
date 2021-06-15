@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgrad"
+    tools:context="com.example.auraia.Dimming.dimActivity"
+    >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="248dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/filterSwitchTxt"
+        android:textColor="#DC0B0B22"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleWhite"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="248dp"
+        android:layout_height="27dp"
+        android:gravity="center|left"
+        android:textColor="#DC0B0B22"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.742"
+        android:text="@string/blueLightTxt" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="248dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center|left"
+        android:textColor="#DC0B0B22"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekred"
+        android:text="@string/screenDarkTxt" />
+
+    <Button
+        android:id="@+id/homeBtndim"
+        android:layout_width="74dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blueroundbtn"
+        android:text="@string/homeBtnText"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dimmingTxt"
+        android:layout_width="316dp"
+        android:layout_height="62dp"
+        android:background="#00FFFFFF"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="@string/dimTitle"
+        android:textColor="#4A9BFF"
+        android:textSize="40sp"
+        android:typeface="normal"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <ImageView
+        android:id="@+id/toggleWhite"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:clickable="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88"
+        app:srcCompat="@drawable/group_20" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="137dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435"
+        app:srcCompat="@drawable/picture5" />
+
+    <SeekBar
+        android:id="@+id/seekalpha"
+        android:layout_width="327dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/roundbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <SeekBar
+        android:id="@+id/seekred"
+        android:layout_width="327dp"
+        android:layout_height="70dp"
+        android:background="@drawable/roundbtn"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dimmingTxt"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="54dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="114dp"
+        android:background="#00FFFFFF"
+        android:text="ToggleButton"
+        android:textColor="#00FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.841" />
+
+    <ImageView
+        android:id="@+id/toggleBlue"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/powerbluebtn"
+        app:layout_constraintVertical_bias="0.88">
+
+    </ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--
+
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Music">
+
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:text="@string/hello_blank_fragment" />
+
+    </FrameLayout>
+
+-->

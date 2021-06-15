@@ -1,0 +1,42 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="fontFamily">@font/reem_kufi</item> <!-- target android sdk versions < 26 and > 14 if theme other than AppCompat -->
+            <item name="android:textViewStyle">@style/rumiText</item>
+        <item name="android:buttonStyle">@style/btnNorm</item>
+    </style>
+
+    <style name="rumiText" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/reem_kufi</item>
+    </style>
+
+    <style name="btnNorm" parent="android:Widget.Button">
+        <item name="android:fontFamily">@font/reem_kufi</item>
+        <item name="android:background">@drawable/blueroundbtn</item>
+
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/mood3</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+</resources>

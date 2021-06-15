@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/journalScrnConst"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgrad">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="248dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/journalEntry"
+        android:textColor="#9A0B0B22"
+        android:textSize="18sp"
+        android:typeface="sans"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/journalTxt" />
+
+    <TextView
+        android:id="@+id/journalTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="@string/journalTitle"
+        android:textColor="#4A9BFF"
+        android:textSize="40sp"
+        android:typeface="normal"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <ImageView
+        android:id="@+id/moodcloud1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="172dp"
+        android:clickable="true"
+        android:contentDescription="@string/imgDescribe"
+        android:focusable="true"
+        android:src="@drawable/mood1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/moodcloud2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="172dp"
+        android:clickable="true"
+        android:contentDescription="@string/imgDescribe"
+        android:focusable="true"
+        android:src="@drawable/mood2"
+        app:layout_constraintStart_toEndOf="@+id/moodcloud1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/moodcloud4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="172dp"
+        android:clickable="true"
+        android:contentDescription="@string/imgDescribe"
+        android:focusable="true"
+        android:src="@drawable/mood4"
+        app:layout_constraintStart_toEndOf="@+id/moodcloud3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/moodcloud3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="172dp"
+        android:clickable="true"
+        android:contentDescription="@string/imgDescribe"
+        android:focusable="true"
+        android:src="@drawable/mood3"
+        app:layout_constraintStart_toEndOf="@+id/moodcloud2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/moodcloud5"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="172dp"
+        android:clickable="true"
+        android:contentDescription="@string/imgDescribe"
+        android:focusable="true"
+        android:src="@drawable/mood5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toEndOf="@+id/moodcloud4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="@string/journalPrompt"
+        android:textColor="#9A0B0B22"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moodcloud3" />
+
+    <EditText
+        android:id="@+id/journalTxtBar"
+        android:layout_width="359dp"
+        android:layout_height="353dp"
+        android:background="@drawable/roundedtxtbar"
+        android:gravity="start|left"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        app:boxBackgroundColor="#FFFFFF"
+        app:helperTextEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Button
+        android:id="@+id/homeBtnjournal"
+        android:layout_width="74dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blueroundbtn"
+        app:fontFamily="@font/reem_kufi"
+        android:text="@string/homeBtnText"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/viewEntsBtn"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="680dp"
+        android:background="@drawable/blueroundbtn"
+        android:text="entries!"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/entSaveBtn"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="680dp"
+        android:background="@drawable/blueroundbtn"
+        android:text="@string/saveBtn"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/feel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/moodcloud3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

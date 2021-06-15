@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="screenBackground">#91FFEE58</color>
+    <color name = "btnBack"> #FEFEFE </color>
+    <color name="colorAccent"> #000000</color>
+    <color name="mood1">#F2F2F2</color>
+    <color name="mood2">#E23052B8</color>
+    <color name="mood3">#6A86D6</color>
+    <color name="mood4">#6FBAFF</color>
+    <color name="mood5">#F0ACDAFF</color>
+
+    <!--   IDK what the fork im doing but HELLOOO
+    -->
+</resources>

@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">aura(beta)</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">F1</string>
+    <string name="second_fragment_label">F2</string>
+    <string name="statBtnTxt">analysis</string>
+    <string name="previous">Previous</string>
+    <string name="settingsBtnTxt">settings</string>
+    <string name="helpBtnTxt">help</string>
+    <string name="switchTxt">lights on! </string>
+    <string name="okayTxt">okay </string>
+    <string name="saveBtn">save! </string>
+    <string name="welcomeTxt"> hi! welcome to aura :)
+        \n
+        here you can find facilities to help you sleep better and take care of your mental health.
+        \n \njournal: here you can write about your feelings for the day as well as reflect on previous days and their entries.
+        \n \n screen dimmer: dim your screen to reduce blue light emissions (that make it harder to sleep)
+        \n \n sleep tracking: enter how long you sleep for and track you sleeping patterns! (you should be getting 8 hours a day btw)
+        \n \n background noise: select some white noise lo-fi music to help you fall asleep!
+        \n \n stats: check how long you’ve slept on average for the week, and how long you’ve spent using certain apps at night
+        \n \n ready to get started?
+</string>
+
+    <string name="journalTitle" translatable="false"> my journal </string>
+    <string name="statsTitle"> analysis and statistics </string>
+    <string name="settingsTitle"> settings </string>
+    <string name="dimTitle"> screen dimming </string>
+    <string name="noiseTitle"> background noise </string>
+    <string name="journalTitle2"> journal entries </string>
+    <string name="bedtimeTitle"> set your bedtime </string>
+    <string name="whitelistTitle"> whitelist </string>
+    <string name="journalEntry"> how was your day? </string>
+    <string name="imgDescribe"> img</string>
+    <string name="journalPrompt"> whats on your mind? </string>
+    <string name="homeBtnText"> home </string>
+    <string name="seeMore"> entries \u003C3  </string>
+
+    <string name="lofiTxt1"> lo-fi </string>
+    <string name="radioStatTxt"> radio static </string>
+    <string name="rainTxt"> rain </string>
+    <string name="windTxt"> wind </string>
+    <string name="timerTxt"> timer </string>
+
+    <string name="settingsNotifTxt"> turn off notifications </string>
+    <string name="settingsBedTxt"> set bedtime </string>
+    <string name="setiingsWhitelistTxt"> whitelist </string>
+    <string name="settingsDimTxt"> dimming settings </string>
+    <string name="settingsDeleteJournalTxt"> delete all journal entries </string>
+    <string name="settingsDeleteStatsTxt"> clear analysis data </string>
+
+    <string name="blueLightTxt"> blue light reduction </string>
+    <string name="screenDarkTxt"> screen darkness </string>
+    <string name="filterSwitchTxt">filter on/off</string>
+
+    <string name="open_app_usage_setting">Open Apps with usage access settings</string>
+    <string name="last_time_used">"Last time used: "</string>
+    <string name="time_span">"Time span: "</string>
+
+    <string name="display_order_text">Sort by:</string>
+    <string name="app_name_label">App</string>
+    <string name="last_time_used_label">Last time used</string>
+    <!-- label for usage time -->
+    <string name="usage_time_label">Usage time</string>
+
+    <string name="editTxt">edit</string>
+    <string name="sleepTxt">00:00</string>
+    <string name="wakeupTxt">00:00</string>
+    <string name="sleepDescribeTxt">at this time your apps will be blocked (unless whitelisted of course!)</string>
+    <string name="wakeDescribeTxt"> here all your apps will be unblocked </string>
+    <string name="notifTxt">
+        notifications off - 09:40 \n
+        notifications on - 07:40 \n\n
+
+        screen filter on - 21:00 \n
+        screen filter off - 07:50 \n\n
+        you can only change these settings before the selected bedtime btw
+    </string>
+
+
+    <string name="title">a \t \t u \t \t r \t \t a </string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="noiseBtnTxt">background noise</string>
+    <string name="journalBtnTxt">my journal</string>
+    <!-- Preference Titles -->
+
+    <!-- Messages Preferences -->
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually re
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="title_activity_home_fr">HomeFr</string>
+    <string name="next">Next</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="title_activity_noise_bg">NoiseBg</string>
+    <string name="title_activity_n_journal">nJournal</string>
+    <string name="title_activity_n_dimming">nDimming</string>
+    <string name="title_activity_n_help">nHelp</string>
+    <string name="title_activity_n_bedtime">nBedtime</string>
+    <string name="title_activity_n_whilelist">nWhilelist</string>
+    <string name="title_activity_journal">journalAct</string>
+    <string name="title_activity_dim">dimActivity</string>
+</resources>

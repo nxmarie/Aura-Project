@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgrad">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/entrybody"
+        tools:context="com.example.auraia.Journal.Entries.entryView">
+
+        <TextView
+            android:id="@+id/dateTxt"
+            android:layout_width="141dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="138dp"
+            android:background="#FFFFFF"
+            android:scrollHorizontally="false"
+            android:text="DATE"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/cloudImg"
+            android:layout_width="207dp"
+            android:layout_height="106dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="40dp"
+            android:layout_toStartOf="@+id/editBtn"
+            app:srcCompat="@drawable/mood5" />
+
+        <Button
+            android:id="@+id/okBtn"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="39dp"
+            android:text="okay"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/editBtn"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_above="@+id/okBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="29dp"
+            android:text="edit"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/doneBtn"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_above="@+id/okBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="46dp"
+            android:background="@drawable/roundbtn"
+            android:text="done!"
+            android:textColor="@color/mood2"
+            android:textColorLink="#FFFFFF"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_above="@+id/okBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="-27dp"
+            android:background="@drawable/roundbtn"
+            android:text="cancel"
+            android:textColor="@color/mood2"
+            android:textColorLink="#FFFFFF"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/entryText"
+            android:layout_width="wrap_content"
+            android:layout_height="282dp"
+            android:layout_above="@+id/cloudImg"
+            android:layout_below="@+id/dateTxt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="34dp"
+            android:fontFamily="@font/reem_kufi"
+            android:text="hi! if you can see this it's because you selected an empty entry, go drink some water!"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/editJournal"
+            android:layout_width="wrap_content"
+            android:layout_height="282dp"
+            android:layout_above="@+id/cloudImg"
+            android:layout_below="@+id/dateTxt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="34dp"
+            android:fontFamily="@font/reem_kufi"
+            android:gravity="start|top"
+            android:hint="write your new journal entry here :)"
+            android:inputType="textMultiLine"
+            android:textSize="21sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgrad"
+    tools:context=".BackgroundNoises.musicFragment">
+
+    <Button
+        android:id="@+id/homeBtnMusic"
+        android:layout_width="74dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blueroundbtn"
+        android:text="@string/homeBtnText"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/timerBtn"
+        android:layout_width="88dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="436dp"
+        android:background="@drawable/blueroundbtn"
+        android:text="@string/timerTxt"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/noiseTxt"
+        android:layout_width="324dp"
+        android:layout_height="66dp"
+        android:background="#00FFFFFF"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="@string/noiseTitle"
+        android:textColor="#4A9BFF"
+        android:textSize="40sp"
+        android:typeface="normal"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <Button
+        android:id="@+id/rainSet"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/roundbtn"
+        android:text="@string/rainTxt"
+        android:textAllCaps="false"
+        android:textIsSelectable="true"
+        android:textSize="19sp"
+        android:typeface="sans"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playView" />
+
+    <Button
+        android:id="@+id/lofiSet"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundbtn"
+        android:text="@string/lofiTxt1"
+        android:textAllCaps="false"
+        android:textIsSelectable="true"
+        android:textSize="19sp"
+        android:typeface="sans"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/windSet" />
+
+    <Button
+        android:id="@+id/lofiSet2"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundbtn"
+        android:text="lo-fi (2)"
+        android:textAllCaps="false"
+        android:textIsSelectable="true"
+        android:textSize="19sp"
+        android:typeface="sans"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lofiSet" />
+
+    <Button
+        android:id="@+id/windSet"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/roundbtn"
+        android:includeFontPadding="true"
+        android:text="@string/windTxt"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textIsSelectable="false"
+        android:textSize="19sp"
+        android:typeface="sans"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioSet" />
+
+    <Button
+        android:id="@+id/radioSet"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/roundbtn"
+        android:text="@string/radioStatTxt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="19sp"
+        android:typeface="sans"
+        app:fontFamily="@font/reem_kufi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rainSet" />
+
+    <ImageView
+        android:id="@+id/playView"
+        android:layout_width="218dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/imgDescribe"
+        android:src="@drawable/playbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noiseTxt" />
+
+    <TextView
+        android:id="@+id/timerSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        app:layout_constraintBottom_toTopOf="@+id/rainSet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playView" />
+
+    <TextView
+        android:id="@+id/COUNT"
+        android:layout_width="174dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="320dp"
+        android:text="TEST TIME WHORE"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
